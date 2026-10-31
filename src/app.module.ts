@@ -24,6 +24,7 @@ import { InternalServerErrorExceptionFilter } from '@core/filters/internal-serve
 import { NotFoundExceptionFilter } from '@core/filters/not-found.filter';
 import { UnprocessableEntityExceptionFilter } from '@core/filters/unprocess-entity.filter';
 import { OrderModule } from '@modules/order/order.module';
+import { PostModule } from '@modules/post/post.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { OrderModule } from '@modules/order/order.module';
     MediaModule,
     UserModule,
     OrderModule,
+    PostModule,
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',

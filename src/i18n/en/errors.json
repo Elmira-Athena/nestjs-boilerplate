@@ -136,5 +136,40 @@
   "PAY-0001": {
     "error_code": 211,
     "message": "Payment order ID not found"
+  },
+  "POST-FIELD-0001": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Required title field is missing"
+    ]
+  },
+  "POST-FIELD-0002": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Required category field is missing"
+    ]
+  },
+  "POST-FIELD-0003": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Required description field is missing"
+    ]
+  },
+  "POST-ID": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "The post ID provided is in an invalid format. The ID must be a number"
+    ]
+  },
+  "POST-0001": {
+    "error_code": 115,
+    "message": "Resource does not exist",
+    "details": [
+      "Post ID does not exist"
+    ]
   }
 }

@@ -136,5 +136,40 @@
   "PAY-0001": {
     "error_code": 211,
     "message": "Không tìm thấy ID lệnh thanh toán"
+  },
+  "POST-FIELD-0001": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Thiếu trường title bắt buộc"
+    ]
+  },
+  "POST-FIELD-0002": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Thiếu trường category bắt buộc"
+    ]
+  },
+  "POST-FIELD-0003": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Thiếu trường description bắt buộc"
+    ]
+  },
+  "POST-ID": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "ID bài viết không hợp lệ. ID phải là số"
+    ]
+  },
+  "POST-0001": {
+    "error_code": 115,
+    "message": "Tài nguyên không tồn tại",
+    "details": [
+      "ID bài viết không tồn tại"
+    ]
   }
 }
