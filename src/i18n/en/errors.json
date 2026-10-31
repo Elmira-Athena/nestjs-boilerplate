@@ -171,5 +171,47 @@
     "details": [
       "Post ID does not exist"
     ]
+  },
+  "TASK-FIELD-0001": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Title is required and must be a string of 1 to 255 characters"
+    ]
+  },
+  "TASK-FIELD-0002": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Category is required and must be a string of at most 255 characters"
+    ]
+  },
+  "TASK-FIELD-0003": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "Description must be a string"
+    ]
+  },
+  "TASK-FIELD-0004": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "isCompleted must be a boolean"
+    ]
+  },
+  "TASK-ID": {
+    "error_code": 104,
+    "message": "Syntax error",
+    "details": [
+      "The task ID provided is in an invalid format. The ID must be a UUID"
+    ]
+  },
+  "TASK-0001": {
+    "error_code": 115,
+    "message": "Resource does not exist",
+    "details": [
+      "Task with this ID not found"
+    ]
   }
 }

@@ -6,6 +6,7 @@ import { ProjectLogger } from '@core/loggers';
 import { ConfigService } from '@nestjs/config';
 import { requestLoggerMiddleware } from '@shared/middleware/request-logger.middleware';
 import { setupSwagger } from './setup-swagger';
+import { I18nMiddleware } from 'nestjs-i18n';
 import {
   ExpressAdapter,
   NestExpressApplication,
@@ -21,6 +22,10 @@ async function bootstrap(): Promise<NestExpressApplication> {
   );
   app.setGlobalPrefix('/api');
   app.use(requestLoggerMiddleware);
+  // nestjs-i18n registers its middleware on '*path' (Nest 11 syntax), which never
+  // matches on Nest 9/Express 4, leaving I18nContext undefined in exception filters
+  const i18nMiddleware = app.get(I18nMiddleware);
+  app.use(i18nMiddleware.use.bind(i18nMiddleware));
   app.enableCors();
   app.useGlobalPipes(
     new ValidationPipe({

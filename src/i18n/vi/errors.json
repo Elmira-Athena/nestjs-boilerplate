@@ -171,5 +171,47 @@
     "details": [
       "ID bài viết không tồn tại"
     ]
+  },
+  "TASK-FIELD-0001": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Trường title là bắt buộc, phải là chuỗi dài 1 đến 255 ký tự"
+    ]
+  },
+  "TASK-FIELD-0002": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Trường category là bắt buộc, phải là chuỗi tối đa 255 ký tự"
+    ]
+  },
+  "TASK-FIELD-0003": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Trường description phải là chuỗi"
+    ]
+  },
+  "TASK-FIELD-0004": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "Trường isCompleted phải là boolean"
+    ]
+  },
+  "TASK-ID": {
+    "error_code": 104,
+    "message": "Lỗi cú pháp",
+    "details": [
+      "ID công việc không hợp lệ. ID phải là UUID"
+    ]
+  },
+  "TASK-0001": {
+    "error_code": 115,
+    "message": "Tài nguyên không tồn tại",
+    "details": [
+      "Không tìm thấy công việc với ID này"
+    ]
   }
 }
