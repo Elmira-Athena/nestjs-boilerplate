@@ -26,6 +26,7 @@ import { UnprocessableEntityExceptionFilter } from '@core/filters/unprocess-enti
 import { OrderModule } from '@modules/order/order.module';
 import { PostModule } from '@modules/post/post.module';
 import { TaskModule } from '@modules/task/task.module';
+import { MailModule } from '@modules/mail/mail.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { TaskModule } from '@modules/task/task.module';
     OrderModule,
     PostModule,
     TaskModule,
+    MailModule,
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',

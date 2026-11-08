@@ -4,6 +4,9 @@
   "description": "A nestjs boilerplate with full of prebuild features",
   "author": "Nguyen Ich Hoa & Tran Dai Quy",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT",
   "scripts": {
     "prepare": "test -d node_modules/husky && husky install || echo \"husky is not installed\"",
@@ -55,6 +58,7 @@
     "logform": "^2.4.2",
     "multer": "^1.4.5-lts.1",
     "nestjs-i18n": "^10.3.7",
+    "nodemailer": "^10.4.0",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
